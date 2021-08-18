@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Fashion Blog Template</title>
+</head>
+<body>
+	<div id="hide-small">
+		<div class="hide-small__logo">
+			<a href="#">
+				<i class="uil uil-facebook"></i>
+			</a>
+			<a href="#">
+				<i class="uil uil-instagram"></i>
+			</a>
+			<a href="#">
+				<i class="uil uil-snapchat-square"></i>
+			</a>
+			<a href="#">
+				<i class="uil uil-twitter"></i>
+			</a>
+			<a href="#">
+				<i class="uil uil-linkedin"></i>
+			</a>
+		</div>
+
+		<div class="hide-small__search">
+			<a href="#">
+				<i class="uil uil-search"></i>
+			</a>
+		</div>
+	</div>
+
+	<div id="header">
+		<h1>
+			<b>VANH BLOGLIFE</b>
+		</h1>
+		<h6>Welcome to the blog of
+			<span>Vanh's world</span>
+		</h6>
+	</div>
+
+	<div id="slider">
+		<img src="./assets/image/jane.jpeg" alt="">
+		<div class="slider-text">
+			<h1>Vanh's</h1>
+			<b>FASHION BLOG</b>
+			<h6>
+				<button onclick="openCard()">SUBSCRIBE</button>
+			</h6>
+		</div>
+	</div>
+
+	<div id="subscribe">
+		<div class="modal-container">
+			<div class="content">
+				<h2>subscribe</h2>
+				<i class="uil uil-multiply" onclick="closeCard()"></i>
+				<p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+				<form action="">
+					<input type="text" placeholder="Enter e-mail" requied>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="content-post">
+			<div class="post-child">
+				<div class="post-text">
+					<h3>TITLE HEADING</h3>
+					<h5>Title description, <span>May 2, 2016</span>
+					</h5>
+				</div>
+				
+				<img src="./assets/image/girl_hat.jpeg" alt="">
+				<p>More Hats! I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+				<div class="post-child_end">
+					<button class="end-left" onclick="likeFunction(this)">
+						<b>
+							<i class="uil uil-thumbs-up"></i>Like
+						</b>
+					</button>
+					<button class="end-right">
+						<b>Replies <span>1</span></b>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="post-child">
+				<div class="post-text">
+					<h3>TITLE HEADING</h3>
+					<h5>Title description, <span>April 23, 2016</span>
+					</h5>
+				</div>
+				
+				<img src="./assets/image/man_hat.jpeg" alt="">
+				<p>Hats! The trend this summer is hats for men!</p>
+
+				<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+				<div class="post-child_end">
+					<button class="end-left" onclick="likeFunction(this)">
+						<b>
+							<i class="uil uil-thumbs-up"></i>Like
+						</b>
+					</button>
+					<button class="end-right">
+						<b>Replies <span>2</span></b>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="post-child">
+				<div class="post-text">
+					<h3>TITLE HEADING</h3>
+					<h5>Title description, <span>April 7, 2016</span>
+					</h5>
+				</div>
+				
+				<img src="./assets/image/runway.jpeg" alt="">
+				<p>Dont miss! The runway in New York City this weekend is gonna be legendary!</p>
+
+				<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+				<div class="post-child_end">
+					<button class="end-left" onclick="likeFunction(this)">
+						<b>
+							<i class="uil uil-thumbs-up"></i>Like
+						</b>
+					</button>
+					<button class="end-right">
+						<b>Replies <span>3</span></b>
+					</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="content-list">
+			<div class="list__profile">
+				<img src="./assets/image/avatar_girl2.jpeg" alt="">
+
+				<div class="profile-text">
+					<h4>My Name</h4>
+					<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="list__popular-post">
+				<div class="popular-post__title">
+					<h4>Popular Posts</h4>
+				</div>
+				
+				<ul class="popular-post-list">
+					<li>
+						<img src="./assets/image/avatar_smoke.jpeg" alt="">
+						<div class="popular-post__text">
+							<p>Denim</p>
+							<p>Sed mattis nunc</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="./assets/image/bandmember.jpeg" alt="">
+						<div class="popular-post__text">
+							<p>Sweaters</p>
+							<p>Praes tinci sed</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="./assets/image/workshop.jpeg" alt="">
+						<div class="popular-post__text">
+							<p>Workshop</p>
+							<p>Ultricies congue</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="./assets/image/avatar_smoke.jpeg" alt="">
+						<div class="popular-post__text">
+							<p>Trends</p>
+							<p>Lorem ipsum dipsum</p>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+			<hr>
+
+			<div class="list__advertise">
+				<div class="advertise__title">
+					<h4>Advertise</h4>
+				</div>
+				<div class="advertise__text">
+					<div class="advertise__text-main">
+						<span>Your AD Here</span>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="list__tags">
+				<div class="tags__title">
+					<h4>Tags</h4>
+				</div>
+				<div class="tags__name">
+					<p>
+						<span>Fashion</span> <span>New York</span> <span>London</span> <span>Hats</span> <span>Norway</span> <span>Sweaters</span> <span>Ideas</span> <span>Deals</span> <span>Accessories</span> <span>News</span> <span>Clothing</span> <span>Shopping</span> <span>Jeans</span> <span>Trends</span>
+					</p>
+					
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="list__inspiration">
+				<div class="inspiration__title">
+					<h4>Inspiration</h4>
+				</div>
+				<div class="inspiration__img">
+					<img src="./assets/image/jeans.jpeg" alt="">
+					<img src="./assets/image/avatar_hat.jpeg" alt="">
+					<img src="./assets/image/team1.jpeg" alt="">
+					<img src="./assets/image/team4.jpeg" alt="">
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="list__follow">
+				<div class="follow__title">
+					<h4>Follow Me</h4>
+				</div>
+				<div class="follow__icon">
+					<i class="uil uil-facebook"></i>
+					<i class="uil uil-instagram"></i>
+					<i class="uil uil-snapchat-square"></i>
+					<i class="uil uil-twitter"></i>
+					<i class="uil uil-linkedin"></i>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="list__subscribe">
+				<div class="subscribe__title">
+					<h4>Subscribe</h4>
+				</div>
+
+				<div class="subscribe__text">
+					<p>Enter your e-mail below and get notified on the latest blog posts.</p>
+					<input type="text" placeholder="Enter e-mail">
+					<button onclick="openCard()">Subscribe</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<a href="#">
+			<i class="uil uil-arrow-up"></i>
+			To the top
+		</a>
+		<p>
+			Powered by <a href="https://www.facebook.com/vietanh.le.77985741">Viet Anh Le</a>
+		</p>
+	</div>
+
+	<script src="./assets/js/cardSubscribe.js"></script>
+</body>
+</html>

@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap');
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	margin: 10px 0px;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	margin: 15px 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+hr {
+	margin: 20px 0px;
+	border: none;
+	border-top: 1px solid #ddd;
+}
+
+/* ======== Hide-small ======== */
+
+#hide-small {
+	display: flex;
+	justify-content: space-between;
+	background: #000;
+	width: 100%;
+	font-family: "Opan Sans", sans-serif;
+	font-size: 15px;
+}
+
+#hide-small div {
+	padding: 8px 0px;
+}
+
+#hide-small a {
+	padding: 8px 16px;
+	color: #fff;
+	background: #000;
+	font-size: 20px;
+}
+
+#hide-small a:hover {
+	background: #ccc;
+	color: #000;
+}
+
+/* ======== Header ======== */
+
+#header {
+	font-family: "Opan Sans", sans-serif;
+	font-size: 15px;
+	padding: 48px 16px;
+	text-align: center;
+}
+
+#header b {
+	font-size: 48px;
+	font-family: "Oswald", sans-serif;
+}
+
+#header h6 {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+#header span {
+	background: #000;
+	color: #fff;
+	padding: 0px 8px;
+}
+
+/* ======== Slider ======== */
+
+#slider {
+	position: relative;
+}
+
+#slider img {
+	width: 100%;
+	display: block;
+}
+
+#slider .slider-text {
+	padding: 12px 24px;
+	font-family: "Opan Sans", sans-serif;
+	font-size: 15px;
+	position: absolute;
+	top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+
+#slider .slider-text h1 {
+	font-size: 36px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+#slider .slider-text b {
+	font-size: 64px;
+	font-family: "Oswald", sans-serif;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+#slider .slider-text button {
+	font-size: 18px;
+	font-family: "Oswald", sans-serif;
+	padding: 12px 24px;
+	color: #000;
+	background: #ccc;
+	border: none;
+}
+
+#slider .slider-text button:hover {
+	background: #ddd;
+	cursor: pointer;
+}
+
+#subscribe {
+	z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#subscribe .modal-container {
+	max-width: 900px;
+	margin: 0px auto;
+	background: #fff;
+	padding: 32px;
+	animation: appear 0.8s;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#subscribe .content {
+	position: relative;
+	padding: 0px 16px;
+}
+
+#subscribe .content h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+#subscribe .content i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 8px 16px;
+}
+
+#subscribe .content i:hover {
+	cursor: pointer;
+	background: #ccc;
+}
+
+#subscribe .content p {
+	font-size: 15px;
+}
+
+#subscribe .content input {
+	padding: 15px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+}
+
+#subscribe .content button {
+	width: 100%;
+	background: red;
+	color: #fff;
+	border: none;
+	padding: 12px 24px;
+	margin-bottom: 16px;
+	font-size: 17px;
+}
+
+#subscribe .content button:hover {
+	background: #ccc;
+	color: #000;
+	cursor: pointer;
+}
+
+/* ======== Container ======== */
+
+#container {
+	background: #ddd;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 16px;
+}
+
+#container .content-post {
+	width: 70%;
+}
+
+#container .content-list {
+	width: 30%;
+}
+
+		/* ======== Content Post ======== */
+
+#container .post-child {
+	margin: 16px;
+	padding: 12px 24px;
+	background: #fff;
+}
+
+#container .post-text {
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	text-align: center;
+}
+
+#container .post-text h3 {
+	font-size: 24px;
+}
+
+#container .post-text h5 {
+	font-size: 18px;
+}
+
+#container .post-text h5 span {
+	opacity: 0.7;
+}
+
+#container .post-child img {
+	width: 100%;
+	padding: 16px 0px;
+}
+
+#container .post-child p {
+	text-align: justify;
+	font-size: 15px;
+}
+
+.content-post .post-child_end {
+	margin: 15px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-post .end-left {
+	padding: 10px 16px;
+	border: 1px solid #ddd;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+.content-post .end-left:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+.content-post .end-left b {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.content-post .end-left i {
+	margin-right: 10px;
+}
+
+.content-post .end-right {
+	padding: 10px 16px;
+	border: 1px solid #ddd;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	background: #000;
+}
+
+.content-post .end-right:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+.content-post .end-right:hover b {
+	color: #000;
+}
+
+.content-post .end-right b {
+	font-size: 15px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.content-post .end-right span {
+	background: #fff;
+	color: #000;
+	display: inline-block;
+	padding: 0px 6px;
+	border-radius: 50%;
+	font-size: 16px;
+	margin-left: 15px;
+}
+
+		/* ======== Content List ======== */
+
+
+#container .content-list {
+	margin: 16px;
+}
+
+				/* ======== Profile ======== */
+
+.content-list .list__profile {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-list .list__profile img {
+	width: 100%;
+	filter: grayscale(75%);
+}	
+
+.content-list .list__profile .profile-text {
+	padding: 0px 16px;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	background: #000;
+	color: #fff;
+}
+
+.content-list h4 {
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+				/* ======== Popular Post ======== */
+
+.content-list .popular-post__title,
+.content-list .advertise__title,
+.content-list .tags__title,
+.content-list .inspiration__title,
+.content-list .follow__title,
+.content-list .subscribe__title {
+	padding: 8px 16px;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	background: #000;
+	color: #fff;
+}
+
+.content-list .popular-post-list li {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	font-family: "Opan Sans", sans-serif;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+
+.content-list .popular-post-list li:hover {
+	cursor: pointer;
+	background: #ccc;
+}
+
+.content-list .popular-post-list li img {
+	height: 50px;
+	margin-right: 15px;
+}
+
+.content-list .popular-post-list .popular-post__text p {
+	margin: 5px 0px;
+	font-size: 17px;
+}
+
+				/* ======== Advertise ======== */
+
+.content-list .list__advertise {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-list .advertise__text {
+	padding: 0px 16px;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	background: #fff;
+}
+
+.content-list .advertise__text-main {
+	height: 200px;
+	margin: 16px 0px;
+	padding: 0px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ddd;
+}
+
+.content-list .advertise__text-main span {
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+				/* ======== Tags ======== */
+
+
+.content-list .list__tags {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-list .tags__name {
+	padding: 0px 16px;
+	background: #fff;
+}
+
+.content-list .tags__name span {
+	display: inline-block;
+	padding: 0px 8px;
+	background: #F1F1F1;
+	margin-bottom: 16px;
+
+}
+
+				/* ======== Inspiration ======== */
+
+.content-list .list__inspiration {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-list .inspiration__img {
+	padding: 0px 8px;
+	display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+}
+
+.content-list .inspiration__img img {
+	width: 50%;
+	margin: 10px 0px;
+	padding: 0px 8px;
+}
+
+				/* ======== Follow ======== */
+
+.content-list .list__follow {
+	display: flex;
+	flex-direction: column;
+} 
+
+.content-list .follow__icon {
+	background: #fff;
+	padding: 8px 16px;
+	font-size: 24px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+				/* ======== Subscribe ======== */
+.content-list .list__subscribe {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-list .subscribe__text {
+	padding: 0px 16px;
+	background: #fff;
+}
+
+.content-list .subscribe__text input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+.content-list .subscribe__text button {
+	margin: 15px 0px;
+	width: 100%;
+	padding: 8px;
+	background: red;
+	color: #fff;
+	border: none;
+	font-size: 17px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+.content-list .subscribe__text button:hover {
+	background: #ccc;
+	cursor: pointer;
+	color: #000;
+}
+
+/* ======== Footer ======== */
+
+#footer {
+	padding: 32px;
+	background: #616161;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+#footer > a {
+	width: 135px;
+	padding: 12px 24px;
+	margin-bottom: 16px;
+	background: #000;
+	color: #fff;
+	font-size: 15px;
+	font-family: "Opan Sans", sans-serif;
+}
+
+#footer > a:hover {
+	background: #ddd;
+	color: #000;
+}
+
+#footer p {
+	color: #fff;
+}
+
+#footer p > a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+/* ======== responsive ======== */
+
+@media screen and (max-width: 992px) {
+	#container {
+		flex-wrap: wrap;
+	}
+
+	#container .content-post {
+		width: 100%;
+	}
+
+	#container .content-list {
+		width: 100%;
+	}
+
+	#subscribe .modal-container {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#subscribe {
+		padding-top: 50px;
+	}
+
+	#subscribe .modal-container {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#hide-small {
+		display: none;
+	}
+
+	#slider .slider-text b {
+		display: none;
+	}
+
+	#subscribe .modal-container {
+		max-width: 580px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
