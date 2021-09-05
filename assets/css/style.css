@@ -31,9 +31,9 @@ hr {
 	border-top: 1px solid #ddd;
 }
 
-/* ======== Hide-small ======== */
+/* ======== Navbar-list ======== */
 
-#hide-small {
+#navbar-list {
 	display: flex;
 	justify-content: space-between;
 	background: #000;
@@ -42,18 +42,18 @@ hr {
 	font-size: 15px;
 }
 
-#hide-small div {
+#navbar-list div {
 	padding: 8px 0px;
 }
 
-#hide-small a {
+#navbar-list a {
 	padding: 8px 16px;
 	color: #fff;
 	background: #000;
 	font-size: 20px;
 }
 
-#hide-small a:hover {
+#navbar-list a:hover {
 	background: #ccc;
 	color: #000;
 }
@@ -130,18 +130,18 @@ hr {
 	background: #ddd;
 	cursor: pointer;
 }
-
+/* ============ Card subcribe ============= */
 #subscribe {
 	z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+	display: none;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
 }
 
 #subscribe .modal-container {
@@ -211,6 +211,10 @@ hr {
 	background: #ccc;
 	color: #000;
 	cursor: pointer;
+}
+
+#subscribe.open {
+	display: block;
 }
 
 /* ======== Container ======== */
@@ -326,6 +330,36 @@ hr {
 	margin-left: 15px;
 }
 
+		/* ======== Comment ======== */
+#container .comment {
+	display: none;
+}
+
+#container .comment.show {
+	display: block;
+}
+
+#container .content {
+	display: flex;
+	margin-bottom: 16px;
+	align-items: center;
+	font-size: 15px;
+}
+
+.content__img {
+	width: 90px !important;
+	margin-right: 5rem;
+	padding: 0px;
+}
+
+.content h4 {
+	font-size: 20px;
+}
+
+.content span {
+	font-size: 15px;
+	opacity: 0.6;
+}
 		/* ======== Content List ======== */
 
 
@@ -343,7 +377,7 @@ hr {
 .content-list .list__profile img {
 	width: 100%;
 	filter: grayscale(75%);
-}	
+}
 
 .content-list .list__profile .profile-text {
 	padding: 0px 16px;
@@ -473,7 +507,7 @@ hr {
 .content-list .list__follow {
 	display: flex;
 	flex-direction: column;
-} 
+}
 
 .content-list .follow__icon {
 	background: #fff;
@@ -584,7 +618,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-	#hide-small {
+	#navbar-list {
 		display: none;
 	}
 

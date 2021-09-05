@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="shortcut icon" href="./assets/image/avatar_girl2.jpeg" type="image/x-icon">
 	<title>Fashion Blog Template</title>
 </head>
 <body>
-	<div id="hide-small">
-		<div class="hide-small__logo">
+	<div id="navbar-list">
+		<div class="nav__logo">
 			<a href="#">
 				<i class="uil uil-facebook"></i>
 			</a>
@@ -27,7 +28,7 @@
 			</a>
 		</div>
 
-		<div class="hide-small__search">
+		<div class="nav__search">
 			<a href="#">
 				<i class="uil uil-search"></i>
 			</a>
@@ -49,22 +50,8 @@
 			<h1>Vanh's</h1>
 			<b>FASHION BLOG</b>
 			<h6>
-				<button onclick="openCard()">SUBSCRIBE</button>
+				<button class="btn btn__card">SUBSCRIBE</button>
 			</h6>
-		</div>
-	</div>
-
-	<div id="subscribe">
-		<div class="modal-container">
-			<div class="content">
-				<h2>subscribe</h2>
-				<i class="uil uil-multiply" onclick="closeCard()"></i>
-				<p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-				<form action="">
-					<input type="text" placeholder="Enter e-mail" requied>
-					<button type="submit">Subscribe</button>
-				</form>
-			</div>
 		</div>
 	</div>
 
@@ -76,7 +63,7 @@
 					<h5>Title description, <span>May 2, 2016</span>
 					</h5>
 				</div>
-				
+
 				<img src="./assets/image/girl_hat.jpeg" alt="">
 				<p>More Hats! I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
 
@@ -88,9 +75,20 @@
 							<i class="uil uil-thumbs-up"></i>Like
 						</b>
 					</button>
-					<button class="end-right">
+					<button class="end-right" id="myBtn" onclick="openComment('comment1')">
 						<b>Replies <span>1</span></b>
 					</button>
+				</div>
+
+				<div class="comment" id="comment1">
+					<hr>
+					<div class="content">
+						<img src="./assets/image/avatar_smoke.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>George <span>May 3, 2015, 6:32 PM</span></h4>
+							<p>Great blog post! Following</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -102,7 +100,7 @@
 					<h5>Title description, <span>April 23, 2016</span>
 					</h5>
 				</div>
-				
+
 				<img src="./assets/image/man_hat.jpeg" alt="">
 				<p>Hats! The trend this summer is hats for men!</p>
 
@@ -114,9 +112,27 @@
 							<i class="uil uil-thumbs-up"></i>Like
 						</b>
 					</button>
-					<button class="end-right">
+					<button class="end-right" id="myBtn" onclick="openComment('comment2')">
 						<b>Replies <span>2</span></b>
 					</button>
+				</div>
+				<div class="comment" id="comment2">
+					<hr>
+					<div class="content">
+						<img src="./assets/image/girl_train.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>Amber <span>April 26, 2015, 10:52 PM</span></h4>
+							<p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<br>
+					<div class="content">
+						<img src="./assets/image/girl.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>Angie <span>April 23, 2015, 9:12 PM</span></h4>
+							<p>Love hats!!</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -128,7 +144,7 @@
 					<h5>Title description, <span>April 7, 2016</span>
 					</h5>
 				</div>
-				
+
 				<img src="./assets/image/runway.jpeg" alt="">
 				<p>Dont miss! The runway in New York City this weekend is gonna be legendary!</p>
 
@@ -140,9 +156,36 @@
 							<i class="uil uil-thumbs-up"></i>Like
 						</b>
 					</button>
-					<button class="end-right">
+					<button class="end-right" id="myBtn" onclick="openComment('comment3')">
 						<b>Replies <span>3</span></b>
 					</button>
+				</div>
+
+				<div class="comment" id="comment3">
+					<hr>
+					<div class="content">
+						<img src="./assets/image/girl_mountain.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>Jane <span>April 10, 2015, 7:22 PM</span></h4>
+							<p>That was a great runway show! Thanks for everything.</p>
+						</div>
+					</div>
+					<br>
+					<div class="content">
+						<img src="./assets/image/boy.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>John <span>April 8, 2015, 10:32 PM</span></h4>
+							<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+					<br>
+					<div class="content">
+						<img src="./assets/image/girl_hood.jpeg" alt="" class="content__img">
+						<div class="content__discription">
+							<h4>Anja <span>April 7, 2015, 9:12 PM</span></h4>
+							<p>Cant wait for the runway to start!</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -163,7 +206,7 @@
 				<div class="popular-post__title">
 					<h4>Popular Posts</h4>
 				</div>
-				
+
 				<ul class="popular-post-list">
 					<li>
 						<img src="./assets/image/avatar_smoke.jpeg" alt="">
@@ -223,7 +266,7 @@
 					<p>
 						<span>Fashion</span> <span>New York</span> <span>London</span> <span>Hats</span> <span>Norway</span> <span>Sweaters</span> <span>Ideas</span> <span>Deals</span> <span>Accessories</span> <span>News</span> <span>Clothing</span> <span>Shopping</span> <span>Jeans</span> <span>Trends</span>
 					</p>
-					
+
 				</div>
 			</div>
 
@@ -266,10 +309,26 @@
 				<div class="subscribe__text">
 					<p>Enter your e-mail below and get notified on the latest blog posts.</p>
 					<input type="text" placeholder="Enter e-mail">
-					<button onclick="openCard()">Subscribe</button>
+					<button class="btn btn__card">Subscribe</button>
 				</div>
 			</div>
 
+		</div>
+	</div>
+
+	<div id="subscribe" class="card__subscribe">
+		<div class="modal-container">
+			<div class="content">
+				<h2>subscribe</h2>
+				<a href="#" class="close__card" style="color: #000; cursor: pointer;">
+					<i class="uil uil-multiply"></i>
+				</a>
+				<p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+				<form action="">
+					<input type="text" placeholder="Enter e-mail" requied>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
 		</div>
 	</div>
 
